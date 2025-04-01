@@ -1,0 +1,102 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background halaman */
+body {
+    background: url('assets/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Container utama */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Judul utama */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffcccb;
+}
+
+/* Paragraf */
+p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Grup tombol */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Style tombol */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Tombol "Maafin Aku" */
+#forgive-btn {
+    background: #ff66b2;
+    color: white;
+}
+
+#forgive-btn:hover {
+    background: #ff85c2;
+}
+
+/* Tombol "Aku Masih Marah" */
+#angry-btn {
+    background: #ff4444;
+    color: white;
+}
+
+#angry-btn:hover {
+    background: #ff6666;
+}
+
+/* Pesan tersembunyi */
+.hidden {
+    display: none;
+    font-size: 16px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
